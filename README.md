@@ -10,6 +10,10 @@
 
 [Reset mysql password](http://localhost/dashboard/docs/reset-mysql-password.html)
 
+* Listing route resource
+
+    `php artisan route:list`
+
 ## Create Model
 
 * `php artisan make:model Product --migration`
