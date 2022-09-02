@@ -1,6 +1,6 @@
 # Laravel API
 
-## Cli
+## Note
 
 * Create laravel project
 
@@ -10,9 +10,14 @@
 
 [Reset mysql password](http://localhost/dashboard/docs/reset-mysql-password.html)
 
+
 * Listing route resource
 
     `php artisan route:list`
+
+### Lib
+
+[sanctum](https://laravel.com/docs/9.x/sanctum#installation)
 
 ## Create Model
 
