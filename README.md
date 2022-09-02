@@ -21,9 +21,15 @@
 
 ## Create Model
 
-* `php artisan make:model Product --migration`
-* `php artisan migrate`
+* Product Model
+    * `php artisan make:model Product --migration`
+    * `php artisan migrate`
+
 
 ## Create Controller
 
-* `php artisan make:controller ProductController --api`
+* Product
+    * `php artisan make:controller ProductController --api`
+
+* Authentication
+    * `php artisan make:controller AuthController`
