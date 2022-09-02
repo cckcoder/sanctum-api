@@ -25,12 +25,15 @@ Route::get('/product/{id}', [ProductController::class, 'show']);
 Route::get('/product/search/{name}', [ProductController::class, 'search']);
 
 Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
 
 // Protected routes
 Route::group(['middleware' => ['auth:sanctum']], function() {
     Route::post('/product', [ProductController::class, 'store']);
     Route::put('/product/{id}', [ProductController::class, 'update']);
     Route::delete('/product/{id}', [ProductController::class, 'destroy']);
+
+    Route::post('/logout', [AuthController::class, 'logout']);
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
